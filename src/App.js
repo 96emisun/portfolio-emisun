@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <nav>
         <ul>
-          <li><span>Home</span></li>
+          <li>Home</li>
           <li>About Me</li>
           <li>Projects</li>
           <li>Contact</li>
