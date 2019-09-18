@@ -48,10 +48,6 @@ nav ul li:hover {
   width: 50%;
   text-align: left;
   border-left: 10px solid #FEFFFF;
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
 }
 
 .ContentBoxContent {
@@ -68,4 +64,15 @@ nav ul li:hover {
 .ContentBoxText {
   color: #FEFFFF;
   font-size: 1em;
+}
+
+#introduction {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#about {
+  margin-top: 100vh;
 }
