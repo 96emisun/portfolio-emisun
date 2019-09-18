@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -10,17 +10,6 @@ body {
 .App {
   width: 100%;
   text-align: center;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: #333;
-}
-
-nav hr {
-  height: 3px;
-  background-color: #FEFFFF;
 }
 
 nav ul {
@@ -39,9 +28,32 @@ nav ul li {
 }
 
 nav ul li:not(:last-child) {
-  border-right: 2px solid #FEFFFF;
+  border-right: 1px solid #FEFFFF;
 }
 
 nav ul li:hover {
   background-color: #17252A;
+}
+
+.ContentBox {
+  margin-top: 2%;
+  width: 50%;
+  text-align: left;
+  border-left: 10px solid #FEFFFF;
+}
+
+.ContentBoxContent {
+  margin: 0 2%;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.ContentBoxTitle {
+  color: #17252A;
+  font-size: 1.5em;
+}
+
+.ContentBoxText {
+  color: #FEFFFF;
+  font-size: 1em;
 }
