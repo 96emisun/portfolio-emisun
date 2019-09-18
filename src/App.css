@@ -1,25 +1,32 @@
-.App {
-  width: 100%;
-  margin: 0 auto;
+* {
+  margin: 0;
   padding: 0;
-  text-align: center;
-  display: inline-block;
 }
 
-nav {
-  height: 200px;
+.App {
+  width: 100%;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   height: 100%;
+  background-color: #3AAFA9;
 }
 
 nav ul li {
   flex: 1;
+  padding: 2vh 0;
+  color: #FEFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 2px solid white;
 }
 
 nav ul li:hover {
-  background-color: red;
+  background-color: #17252A;
 }
