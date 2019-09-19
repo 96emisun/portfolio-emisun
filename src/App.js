@@ -1,10 +1,12 @@
 import React from 'react';
+import logo from './resources/rat-logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <nav>
+        <img src={logo} />
         <ul>
           <li>Home</li>
           <li>About Me</li>
