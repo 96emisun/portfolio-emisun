@@ -22,23 +22,24 @@ body {
 }
 
 nav {
-  display: flex;
+  margin: 0;
 }
 
 nav img {
-  flex: 0.2;
   height: 128px;
+  position: absolute;
+  top: 0;
+  left: 50px;
 }
 
 nav ul {
+  width: 50%;
   margin-top: 25px;
   display: flex;
-  flex: 0.8;
   list-style: none;
   height: 100%;
   background-color: #2B7A78;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
 }
 
 nav ul li {
@@ -50,15 +51,25 @@ nav ul li {
 }
 
 nav ul li:not(:last-child) {
-  border-right: 1px solid #FEFFFF;
+  border-right: 1px solid #3AAFA9;
 }
 
 nav ul li:hover {
   background-color: #17252A;
 }
 
+nav ul li:first-child:hover {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+nav ul li:last-child:hover {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .ContentBox {
-  width: 50%;
+  width: 40%;
   text-align: left;
   border-left: 10px solid #FEFFFF;
 }
