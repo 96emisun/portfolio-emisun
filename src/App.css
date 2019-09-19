@@ -21,10 +21,6 @@ body {
   text-align: center;
 }
 
-nav {
-  margin: 0;
-}
-
 nav img {
   height: 128px;
   position: absolute;
@@ -39,7 +35,7 @@ nav ul {
   list-style: none;
   height: 100%;
   background-color: #2B7A78;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 nav ul li {
@@ -51,7 +47,7 @@ nav ul li {
 }
 
 nav ul li:not(:last-child) {
-  border-right: 1px solid #3AAFA9;
+  border-right: 3px solid #3AAFA9;
 }
 
 nav ul li:hover {
@@ -59,13 +55,13 @@ nav ul li:hover {
 }
 
 nav ul li:first-child:hover {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 nav ul li:last-child:hover {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .ContentBox {
