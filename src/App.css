@@ -68,6 +68,11 @@ nav ul li:last-child:hover {
   width: 40%;
   text-align: left;
   border-left: 10px solid #FEFFFF;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
 }
 
 .ContentBoxContent {
@@ -86,13 +91,12 @@ nav ul li:last-child:hover {
   font-size: 1em;
 }
 
-#introduction {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+.FadeOut {
+  transition: opacity 0.5s;
+  opacity: 0;
 }
 
-#about {
-  margin-top: 100vh;
+.FadeIn {
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
