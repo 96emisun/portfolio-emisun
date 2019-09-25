@@ -16,11 +16,12 @@ class App extends React.Component {
 
   handleClick(page) {
     var currentPage = this.state.currentPage;
+
     const currentContent = document.getElementById(currentPage);
-    currentContent.classList.toggle('FadeOut');
+    currentContent.classList.toggle('Active');
 
     const newContent = document.getElementById(page);
-    newContent.classList.toggle('FadeOut');
+    newContent.classList.toggle('Active');
 
     this.setState({
       currentPage: page
@@ -40,7 +41,7 @@ class App extends React.Component {
         </nav>
         
         <content>
-          <div id="about" className="ContentBox">
+          <div id="about" className="ContentBox Active">
             <div className="ContentBoxContent">
               <span className="ContentBoxTitle">Welcome!</span>
               <p className="ContentBoxText">
@@ -54,7 +55,7 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div id="projects" className="ContentBox FadeOut">
+          <div id="projects" className="ContentBox">
             <div className="ContentBoxContent">
               <span className="ContentBoxTitle">Projects</span>
 
@@ -84,7 +85,7 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div id="contact" className="ContentBox FadeOut">
+          <div id="contact" className="ContentBox">
             <div className="ContentBoxContent">
               <span className="ContentBoxTitle">Contact</span>
               <p className="ContentBoxText">
