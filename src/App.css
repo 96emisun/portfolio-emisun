@@ -73,6 +73,8 @@ nav ul li:last-child:hover {
   left: 50vw;
   transform: translate(-50%, -50%);
 
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .ContentBoxContent {
@@ -96,7 +98,7 @@ nav ul li:last-child:hover {
   opacity: 0;
 }
 
-.FadeIn {
-  transition: 0.5s;
-  transition-delay: 0.5s;
+.ProjectBox img {
+  width: 200px;
+  height: 200px;
 }

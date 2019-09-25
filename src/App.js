@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './resources/rat-logo.svg';
+import ratLogoImg from './resources/rat-logo.svg';
+import placeholderImg from './resources/placeholder.png';
 import './App.css';
 
 class App extends React.Component {
@@ -17,11 +18,9 @@ class App extends React.Component {
     var currentPage = this.state.currentPage;
     const currentContent = document.getElementById(currentPage);
     currentContent.classList.toggle('FadeOut');
-    currentContent.classList.toggle('FadeIn');
 
     const newContent = document.getElementById(page);
     newContent.classList.toggle('FadeOut');
-    newContent.classList.toggle('FadeIn');
 
     this.setState({
       currentPage: page
@@ -32,7 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <nav>
-          <img src={logo} alt="" />
+          <img src={ratLogoImg} alt="" />
           <ul>
             <li onClick={() => this.handleClick("about")}>About Me</li>
             <li onClick={() => this.handleClick("projects")}>Projects</li>
@@ -41,19 +40,16 @@ class App extends React.Component {
         </nav>
         
         <content>
-          <div id="about" className="ContentBox FadeIn">
+          <div id="about" className="ContentBox">
             <div className="ContentBoxContent">
-              <span className="ContentBoxTitle">About</span>
+              <span className="ContentBoxTitle">Welcome!</span>
               <p className="ContentBoxText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna lacus, auctor vel dignissim eu, ultricies a tortor.
-                Etiam gravida mauris nulla, in molestie nisl accumsan vitae. Duis et posuere dolor. Aenean bibendum ligula ut mi viverra, feugiat scelerisque nisl pulvinar.
-                Nulla viverra ut nunc eget faucibus. Vivamus facilisis orci vel turpis vehicula, at pharetra ligula porta. In luctus congue felis, sit amet accumsan magna ultrices non.
                 <br/>
-                Vivamus vulputate felis nec commodo euismod. Donec tincidunt nisl non quam fermentum, ut lobortis tortor pretium.
-                Donec varius ultricies tellus, vitae convallis quam facilisis vel. Donec eget facilisis nisl. Duis libero nibh, consequat at libero eget, egestas lobortis velit.
-                Sed viverra tempus tellus eget bibendum. Cras aliquet nibh sed mi mollis suscipit. Phasellus porta, magna nec vehicula cursus, elit quam suscipit libero, at pellentesque orci sem ut sapien.
-                Mauris gravida sem lacus, ut semper metus consequat nec. Nunc elementum tortor id urna volutpat gravida. Vivamus quam erat, semper in sem a, vehicula lacinia sapien.
-                Curabitur ligula dui, efficitur eu turpis non, viverra pretium massa. In auctor mollis mauris sit amet dapibus.
+                My name is Emil Sundqvist and I'm a tech enthusiast living in the chilly northern parts of Sweden.
+                <br/><br/>
+                I am currently working as an Application Management Lead for a large consulting business. That position carries a lot of responsibilities and many difficulties, but I've never been one to turn down a challenge.
+                <br/><br/>
+                Head to the "projects" tab for samples of my work or the "contact" tab where you can get in touch with me directly. From there you can also navigate to my LinkedIn page to read more about me and my qualifications.
               </p>
             </div>
           </div>
@@ -61,17 +57,30 @@ class App extends React.Component {
           <div id="projects" className="ContentBox FadeOut">
             <div className="ContentBoxContent">
               <span className="ContentBoxTitle">Projects</span>
-              <p className="ContentBoxText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna lacus, auctor vel dignissim eu, ultricies a tortor.
-                Etiam gravida mauris nulla, in molestie nisl accumsan vitae. Duis et posuere dolor. Aenean bibendum ligula ut mi viverra, feugiat scelerisque nisl pulvinar.
-                Nulla viverra ut nunc eget faucibus. Vivamus facilisis orci vel turpis vehicula, at pharetra ligula porta. In luctus congue felis, sit amet accumsan magna ultrices non.
-                <br/>
-                Vivamus vulputate felis nec commodo euismod. Donec tincidunt nisl non quam fermentum, ut lobortis tortor pretium.
-                Donec varius ultricies tellus, vitae convallis quam facilisis vel. Donec eget facilisis nisl. Duis libero nibh, consequat at libero eget, egestas lobortis velit.
-                Sed viverra tempus tellus eget bibendum. Cras aliquet nibh sed mi mollis suscipit. Phasellus porta, magna nec vehicula cursus, elit quam suscipit libero, at pellentesque orci sem ut sapien.
-                Mauris gravida sem lacus, ut semper metus consequat nec. Nunc elementum tortor id urna volutpat gravida. Vivamus quam erat, semper in sem a, vehicula lacinia sapien.
-                Curabitur ligula dui, efficitur eu turpis non, viverra pretium massa. In auctor mollis mauris sit amet dapibus.
-              </p>
+
+              <a target="_blank" href="#" className="ProjectBox">
+                <img src={placeholderImg} alt="image" />
+              </a>
+
+              <a target="_blank" href="#">
+                <img src="#" alt="image" />
+              </a>
+
+              <a target="_blank" href="#">
+                <img src="#" alt="image" />
+              </a>
+
+              <a target="_blank" href="#">
+                <img src="#" alt="image" />
+              </a>
+
+              <a target="_blank" href="#">
+                <img src="#" alt="image" />
+              </a>
+
+              <a target="_blank" href="#">
+                <img src="#" alt="image" />
+              </a>
             </div>
           </div>
 
